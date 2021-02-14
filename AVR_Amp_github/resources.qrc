@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="images">
+    <file>mythtv_logo.gif</file>
+    <file>background.png</file>
+  </qresource>
+</RCC>
