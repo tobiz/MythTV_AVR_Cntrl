@@ -120,16 +120,6 @@ class Relay(object):
             
 def main(idVendor, idProduct, relay_nos, state):
     	
-    	#print ('Number of arguments:', len(sys.argv), 'arguments.')
-    	#print ('Argument List:', str(sys.argv))
-    
-    	#idVendor = sys.argv[1]
-    	#idProduct = sys.argv[2]
-    
-    	#kwargs = sys.kwargs
-    
-    	#print("idVendor=", idVendor)
-
     	# Create a relay object
     	relay = Relay(idVendor=0x16c0, idProduct=0x05df)
     	
@@ -139,46 +129,7 @@ def main(idVendor, idProduct, relay_nos, state):
     	sleep(1)
     	return
 
-    	# (Setter) Turn switch 1 on
-    	#r1 = relay.state(1)
-    	#print "Relay initial state: ", r1
-    	#if r1 == True:
-    	#    relay.state(1, on=False)
-    	#    r2 = relay.state(1)
-    	#    print "Current state was True, set: ", r2
-    	#else:
-    	#    relay.state(1, on=True)
-    	#    r2 = relay.state(1)
-    	#    print "Current state was False, set: ", r2
-    	#exit()
-    	#print "\n\n"
-    	#sleep(2)
-    
-    	print ("Set Relay 1 state True")
-    	relay.state(1, on=True)
-    	print ("Relay 1 state is: ", relay.state(1))
-
-    	sleep(2)
-
-    	# Turn all switches off
-    	print ("\nSet Relay 1 state False")
-    	relay.state(1, on=False)
-    	print ("Relay 1 state is: ", relay.state(1))
-    
-    	sleep(2)
-    
-    	print ("\nSet Relay 1 state True")
-    	relay.state(1, on=True)
-    	print ("Relay 1 state is: ", relay.state(1))
-    	sleep(2)
-    
-    	print ("\nSet Relay 1 state False")
-    	relay.state(1, on=False)
-    	print ("Relay 1 state is: ", relay.state(1))
-    	#exit()
-
-    	# Print the state of all switches
-    	#print relay.state(0)
+    	
 
 if __name__ == '__main__':
     from time import sleep

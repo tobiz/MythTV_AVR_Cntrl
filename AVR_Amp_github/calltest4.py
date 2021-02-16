@@ -73,10 +73,6 @@ class Worker(QRunnable):
         self.signals.error.emit(self.button)
         print("Thread complete")
 
-
-
-
-#class mythAVAmp_cntrl(QMainWindow, Ui_MainWindow):
 class mythAVAmp_cntrl(QMainWindow, Ui_MainWindow):
 	#def __init__(self):
 	def __init__(self, x=196, y=173, w=1000, h=800):
